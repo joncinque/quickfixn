@@ -9,6 +9,8 @@
     <Authors>Connamara Systems, LLC and QuickFIX/n contributors</Authors>
     <Version>1.9.0</Version>
     <Platforms>AnyCPU;x64</Platforms>
+    <PackageId>QuickFix.FIX41</PackageId>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

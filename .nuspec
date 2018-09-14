@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>QuickFix.Net.NETCore</id>
+        <version>1.8.0</version>
+        <title>QuickFIX/n</title>
+        <authors>Josh Hundley</authors>
+        <owners>Josh Hundley</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <licenseUrl>https://github.com/connamara/quickfixn</licenseUrl>
+        <projectUrl>https://github.com/connamara/quickfixn</projectUrl>
+        <description>QuickFIX/n is a .NET port of QuickFIX, an open source C++ FIX engine. We love QuickFIX. We have been contributors nearly since its conception and use it heavily in our products and consulting. The goal of QuickFIX/n is to create an open source FIX engine that feels native to C#. The (C++) QuickFIX project maintains a C# wrapper which has been used successfully in .NET for many years, but it results in code that is not idiomatic of .NET development. QuickFIX/n attempts to keep the same robustness and conformance of QuickFIX with a similar API while bringing native performance and idiomatic usage to .NET. For Java development, please visit the excellent QuickFIX/J. QuickFIX/n uses the QuickFIX name with the full backing and support of QuickFIX and its creator Oren Miller.</description>
+        <summary>QuickFIX/n implements the FIX protocol on .NET.</summary>
+        <releaseNotes>QuickFIX/n is a .NET port of QuickFIX, an open source C++ FIX engine. What's New ---------- ### v1.8.0: * (patch) #402 - Multithreading fix to please NUnit 2.6.3 and above (arkadiuszwojcik) * (patch) #406 - Remove xslt (brobits) * (patch) #417 - Bring unit tests up-to-date with NUnit v3.4.1 (zherr) * (minor) #418 - Target .NET 4.5 (zherr) * (minor) #419 - Atrun dep removal (zherr) * (minor) #421 - added class for web interface (mohit-kumar-3pillar) * (minor) #425 - Updating DateTimeConverter to be able to convert between microseconds (huwmongoose) * (patch) #428 - lock down nokogiri version (cbusbey) * (minor) #444 - generator doc update + deletion script (gbirchmeier) * (patch) #445 - remove wonky whitespace from generated message classes (gbirchmeier) * (minor) #459 - Nanosecond support for QuickFIX timestamp fields (brobits) * (patch) #463 - adds fix50sp1-sp2 to FixMessages proj, fixes generator bug (cbusbey)</releaseNotes>
+        <copyright>QuickFIX/n is sponsored by Connamara Systems</copyright>
+        <tags>fix quickfix .net</tags>
+    </metadata>
+    <files>
+        <file src="QuickFIXn\bin\Release\netstandard2.0\QuickFix.dll" target="lib\netstandard2.0" />
+        <file src="Messages\FIX40\bin\Release\netstandard2.0\QuickFix.FIX40.dll" target="lib\netstandard2.0" />
+        <file src="Messages\FIX41\bin\Release\netstandard2.0\QuickFix.FIX41.dll" target="lib\netstandard2.0" />
+        <file src="Messages\FIX42\bin\Release\netstandard2.0\QuickFix.FIX42.dll" target="lib\netstandard2.0" />
+        <file src="Messages\FIX43\bin\Release\netstandard2.0\QuickFix.FIX43.dll" target="lib\netstandard2.0" />
+        <file src="Messages\FIX44\bin\Release\netstandard2.0\QuickFix.FIX44.dll" target="lib\netstandard2.0" />
+        <file src="Messages\FIX50\bin\Release\netstandard2.0\QuickFix.FIX50.dll" target="lib\netstandard2.0" />
+        <file src="Messages\FIX50SP1\bin\Release\netstandard2.0\QuickFix.FIX50SP1.dll" target="lib\netstandard2.0" />
+        <file src="Messages\FIX50SP2\bin\Release\netstandard2.0\QuickFix.FIX50SP2.dll" target="lib\netstandard2.0" />
+    </files>
+</package>

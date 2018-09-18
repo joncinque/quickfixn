@@ -4,13 +4,25 @@
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <Title>QuickFIX/n FIX5.0 Messages</Title>
     <PackageTitle>$(Title)</PackageTitle>
-    <Description>Open-source C# implementation of QuickFIX</Description>
     <Copyright>QuickFIXn.org 2011-now</Copyright>
-    <Authors>Connamara Systems, LLC and QuickFIX/n contributors</Authors>
+    <PackageId>QuickFix.Net.NETCore.FIX50</PackageId>
     <Version>1.9.0</Version>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Description>QuickFIX/n is a .NET port of QuickFIX, an open source C++ FIX engine. We love QuickFIX. We have been contributors nearly since its conception and use it heavily in our products and consulting. The goal of QuickFIX/n is to create an open source FIX engine that feels native to C#. The (C++) QuickFIX project maintains a C# wrapper which has been used successfully in .NET for many years, but it results in code that is not idiomatic of .NET development. QuickFIX/n attempts to keep the same robustness and conformance of QuickFIX with a similar API while bringing native performance and idiomatic usage to .NET. For Java development, please visit the excellent QuickFIX/J. QuickFIX/n uses the QuickFIX name with the full backing and support of QuickFIX and its creator Oren Miller.</Description>
+    <Copyright>QuickFIX/n is sponsored by Connamara Systems</Copyright>
+    <Authors>AlgomateInc, Connamara Systems, LLC and QuickFIX/n contributors</Authors>
+    <PackageReleaseNotes>New in 1.8.1: "* introduce .nuspec and modifications to csprojs * (#493) fix DD parsing issues with certain comments * update release notes with some missing entries * fix delete-generated; a prev fix broke it * release note for previous commit (pull #486) * More informative exception for DD parsing errors * added x64 support in solution and project files * Step 3. Updated release script and readme * Step 2: Remove message sources from the QuickFIXn folder because it's cumbersome to ignore all the message folders in .csproj * Step 1: Create separate .csproj projects for all versions of FIX specs, dynamic load of QuickFix.*.dll assemblies *  Include net core 2.0 in acceptance tests. * Updated release readme. * Fix paths in example config files. * Update package script to include NET Standard 2.0. * Ensure key files and config are copied to output for examples. * Update example notes * Fixed indenting in README.md * Updated build, test, and release scripts. * Remove Ruby code to generate FixMessages.csproj as the new csproj format does not require it. * Migrate to new csproj format and add target or netstandard2.0. * Fix warnings about comments."</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/AlgomateInc/quickfixn/blob/master/LICENSE</PackageLicenseUrl>
+    <Company>AlgomateInc</Company>
+    <NeutralLanguage>en</NeutralLanguage>
+    <RepositoryUrl>https://github.com/AlgomateInc/quickfixn</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>fix quickfix .net</PackageTags>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <RootNamespace>QuickFix</RootNamespace>
     <Platforms>AnyCPU;x64</Platforms>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <PackageId>QuickFix.FIX50</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
